@@ -2,7 +2,6 @@ import {
   faHandHoldingDollar,
   faScrewdriverWrench,
   faUserCheck,
-  faUserGear,
   faUsersGear,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

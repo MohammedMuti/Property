@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../Assests/logo.svg";
 import "./Navbar.css";
 
@@ -7,8 +7,6 @@ function Navbar(props) {
   const path = useLocation();
   const [scroll, setScroll] = useState(false);
   const [active, setActive] = useState("/");
-  const [meanNav, setMeanNav] = useState(false);
-  const [services, setServices] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -22,7 +20,7 @@ function Navbar(props) {
 
   useEffect(() => {
     setActive(path.pathname);
-  }, path);
+  }, [path]);
 
   return (
     <div>
