@@ -1,0 +1,75 @@
+p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar-wrapper {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.navbar-wrapper.scroll {
+  background-color: rgba(0, 0, 0, 0.482);
+  padding: 0;
+}
+
+.navbar-wrapper .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 3rem;
+}
+
+.navbar-wrapper .navbar .logo {
+  width: 8rem;
+}
+
+.navbar-wrapper .navbar .lists .list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-wrapper .navbar .lists .list li .link {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.navbar-wrapper .navbar .lists .list li .link:hover {
+  color: #3492ff;
+}
+
+.navbar-wrapper .navbar .lists .list li .link.active {
+  color: #3492ff;
+}
+
+.navbar-wrapper .navbar .lists .list.home li .link {
+  color: white;
+}
+
+.navbar-wrapper .navbar .lists .list.home li .link:hover {
+  color: #3492ff;
+}
+
+.navbar-wrapper .navbar .lists .list.home li .link.active {
+  color: #3492ff;
+}
+/*# sourceMappingURL=Navbar.css.map */

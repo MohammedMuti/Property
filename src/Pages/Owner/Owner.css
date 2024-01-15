@@ -1,0 +1,203 @@
+p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.main-banner-wrapper {
+  width: 100%;
+  height: 40rem;
+  background-image: url(../../Assests/Banners/main-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main-banner-wrapper .main-banner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10%;
+}
+
+.main-banner-wrapper .main-banner .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.main-banner-wrapper .main-banner .content h2 {
+  font-size: 2.5rem;
+}
+
+.main-banner-wrapper .main-banner .content h3 {
+  font-size: 1.5rem;
+}
+
+.main-banner-wrapper .main-banner .content a {
+  background-color: #3492ff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.main-banner-wrapper .main-banner .content a:hover {
+  background-color: white;
+  color: #3492ff;
+}
+
+.aboutH {
+  background: url(../../Assests/Banners/blue.png);
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 10%;
+}
+
+.aboutH .info {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutH .info h2 {
+  font-size: 2.2rem;
+}
+
+.aboutH .info h2 span {
+  color: #3492ff;
+}
+
+.aboutH .info p {
+  text-align: justify;
+}
+
+.aboutH .info a {
+  background-color: #3492ff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.aboutH .info a:hover {
+  background-color: white;
+  color: #3492ff;
+}
+
+.aboutH .content {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutH .content .content-container {
+  padding: 1rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.aboutH .content .content-container .icon {
+  min-width: 4rem;
+}
+
+.aboutH .content .content-container .icon svg {
+  font-size: 3rem;
+}
+
+.aboutH .content .content-container .content-info h3 {
+  font-size: 1.5rem;
+}
+
+.aboutH .content .content-container .content-info p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.maintainH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 10%;
+}
+
+.maintainH .img {
+  width: 48%;
+}
+
+.maintainH .info {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.maintainH .info h2 {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+.maintainH .info h2 span {
+  color: #3492ff;
+}
+/*# sourceMappingURL=Owner.css.map */

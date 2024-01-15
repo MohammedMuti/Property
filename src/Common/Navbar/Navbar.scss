@@ -1,0 +1,63 @@
+@import "../Variable/Variable.scss";
+
+.navbar-wrapper {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  transition: all 0.5s ease;
+  z-index: 1000;
+
+  &.scroll {
+    background-color: rgba(0, 0, 0, 0.482);
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+
+    .logo {
+      width: 8rem;
+    }
+
+    .lists {
+      .list {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+
+        li {
+          .link {
+            color: black;
+            font-size: 1.2rem;
+
+            &:hover {
+              color: $main;
+            }
+
+            &.active {
+              color: $main;
+            }
+          }
+        }
+
+        &.home {
+          li {
+            .link {
+              color: white;
+              &:hover {
+                color: $main;
+              }
+
+              &.active {
+                color: $main;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
