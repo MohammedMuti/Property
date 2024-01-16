@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Owner from "./Pages/Owner/Owner";
 import AddProperty from "./Pages/AddProperty/AddProperty";
 import ScrollToTop from "./Common/ScrollToTop/ScrollToTop";
