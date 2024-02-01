@@ -28,8 +28,10 @@ function Owner(props) {
             <img src={require("../../Assests/banner.webp")} alt="" />
           </div>
           <div className="main-content">
-            <h2>Navigating Your Real Estate Journey</h2>
-            <h3>Unlocking the Door to Your Investment Success</h3>
+            <h2>Global Iconic Ventures</h2>
+            <h3>
+              Your Trusted Partner In Property And Rental Management Excellence
+            </h3>
             <Link to={"/add-your-property"}>ADD your Property</Link>
             <Link to={"/search-property"}>Search for Property</Link>
           </div>

@@ -4,6 +4,13 @@ p {
   line-height: 2rem;
 }
 
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -11,6 +18,12 @@ img {
 .main-banner-wrappe {
   padding: 5% 10%;
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  .main-banner-wrappe {
+    padding: 5% 5%;
+  }
 }
 
 .main-banner-wrappe .main-banner {
@@ -65,11 +78,24 @@ img {
 }
 
 .main-banner-wrappe .main-banner .main-content h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 500px) {
+  .main-banner-wrappe .main-banner .main-content h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .main-banner-wrappe .main-banner .main-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  .main-banner-wrappe .main-banner .main-content h3 {
+    font-size: 1rem;
+  }
 }
 
 .main-banner-wrappe .main-banner .main-content a {
@@ -105,6 +131,12 @@ img {
   padding: 5% 10%;
 }
 
+@media (max-width: 500px) {
+  .aboutH {
+    padding: 5% 5%;
+  }
+}
+
 @media (max-width: 1000px) {
   .aboutH {
     -webkit-box-orient: vertical;
@@ -133,8 +165,20 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  .aboutH .info {
+    gap: 0.5rem;
+  }
+}
+
 .aboutH .info h2 {
   font-size: 2.2rem;
+}
+
+@media (max-width: 500px) {
+  .aboutH .info h2 {
+    font-size: 1.6rem;
+  }
 }
 
 .aboutH .info h2 span {
@@ -152,6 +196,12 @@ img {
   padding: 1rem;
   color: white;
   border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .aboutH .info a {
+    padding: 0.5rem;
+  }
 }
 
 .aboutH .info a:hover {
@@ -191,14 +241,33 @@ img {
 
 .aboutH .content .content-container .icon {
   min-width: 4rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+  .aboutH .content .content-container .icon {
+    min-width: 3rem;
+  }
 }
 
 .aboutH .content .content-container .icon svg {
   font-size: 3rem;
 }
 
+@media (max-width: 500px) {
+  .aboutH .content .content-container .icon svg {
+    font-size: 2rem;
+  }
+}
+
 .aboutH .content .content-container .content-info h3 {
   font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .aboutH .content .content-container .content-info h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .aboutH .content .content-container .content-info p {

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../../Common/Banner/Banner";
+import ContactComp from "../../Common/ContactComp/ContactComp";
 import Footer from "../../Common/Footer/Footer";
 import Navbar from "../../Common/Navbar/Navbar";
 import "./Location.css";
@@ -12,6 +13,7 @@ function Location(props) {
     <div>
       <Navbar />
       <Banner title={"Locations"} />
+      <ContactComp />
 
       <div className="locations">
         <div className="content">

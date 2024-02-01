@@ -14,7 +14,7 @@ function AboutH(props) {
       <div className="aboutH">
         <div className="info">
           <h2>
-            We Care About Your <span>Property</span>
+            ABOUT US<span></span>
           </h2>
           <p>
             At GIV, we understand the significance of seamless rental
