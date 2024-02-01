@@ -1,3 +1,5 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../Assests/logo.svg";
@@ -86,6 +88,7 @@ function Navbar(props) {
                 </Link>
               </li>
             </ul>
+            <FontAwesomeIcon icon={faBars} />
           </div>
         </div>
       </div>

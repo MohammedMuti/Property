@@ -23,8 +23,23 @@ img {
   gap: 3rem;
 }
 
+@media (max-width: 1000px) {
+  .main-banner-wrappe .main-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main-banner-wrappe .main-banner .main-image {
   width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .main-banner-wrappe .main-banner .main-image {
+    width: 100%;
+  }
 }
 
 .main-banner-wrappe .main-banner .main-image img {
@@ -41,6 +56,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .main-banner-wrappe .main-banner .main-content {
+    width: 100%;
+  }
 }
 
 .main-banner-wrappe .main-banner .main-content h2 {
@@ -84,6 +105,16 @@ img {
   padding: 5% 10%;
 }
 
+@media (max-width: 1000px) {
+  .aboutH {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .aboutH .info {
   width: 48%;
   display: -webkit-box;
@@ -94,6 +125,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .aboutH .info {
+    width: 100%;
+  }
 }
 
 .aboutH .info h2 {
@@ -132,6 +169,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .aboutH .content {
+    width: 100%;
+  }
 }
 
 .aboutH .content .content-container {

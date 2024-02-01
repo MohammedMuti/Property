@@ -40,12 +40,24 @@ img {
   width: 8rem;
 }
 
+@media (max-width: 700px) {
+  .navbar-wrapper .navbar .logo {
+    width: 4rem;
+  }
+}
+
 .navbar-wrapper .navbar .lists .list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .navbar-wrapper .navbar .lists .list {
+    display: none;
+  }
 }
 
 .navbar-wrapper .navbar .lists .list li .link {
@@ -71,5 +83,19 @@ img {
 
 .navbar-wrapper .navbar .lists .list.home li .link.active {
   color: #3492ff;
+}
+
+.navbar-wrapper .navbar .lists svg {
+  color: white;
+  font-size: 2rem;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar-wrapper .navbar .lists svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

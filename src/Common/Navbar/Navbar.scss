@@ -25,6 +25,9 @@
 
     .logo {
       width: 8rem;
+      @media (max-width: 700px) {
+        width: 4rem;
+      }
     }
 
     .lists {
@@ -32,6 +35,9 @@
         list-style-type: none;
         display: flex;
         gap: 2rem;
+        @media (max-width: 1000px) {
+          display: none;
+        }
 
         li {
           .link {
@@ -61,6 +67,16 @@
               }
             }
           }
+        }
+      }
+
+      svg {
+        color: white;
+        font-size: 2rem;
+        display: none;
+
+        @media (max-width: 1000px) {
+          display: flex;
         }
       }
     }

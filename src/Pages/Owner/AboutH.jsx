@@ -17,13 +17,18 @@ function AboutH(props) {
             We Care About Your <span>Property</span>
           </h2>
           <p>
-            At [Company Name], we understand the unique challenges of managing
-            real estate from a distance. As property owners who may reside
-            outside the city, entrusting your valuable assets to a reliable
-            property management company is crucial. We specialize in overseeing
-            and optimizing the rental experience for absentee property owners,
-            ensuring that your investment is not only well-maintained but also
-            maximizes its earning potential.
+            At GIV, we understand the significance of seamless rental
+            management. Whether you're a property owner or a tenant, we're here
+            to redefine your rental journey. Explore our comprehensive range of
+            services tailored to meet your unique needs. From property marketing
+            and tenant screening to maintenance and financial management, we've
+            got you covered. Maximize your property's potential with our
+            strategic marketing approach. We ensure your listing stands out,
+            attracting quality tenants in no time. Leave the hassle of tenant
+            screening, legal agreement, rental collection, follow up,
+            maintenance to us. Our thorough vetting process ensures reliable and
+            responsible occupants, providing you peace of mind Let us handle the
+            financial intricacies.
           </p>
           <Link>Know More</Link>
         </div>
