@@ -43,20 +43,18 @@ function Navbar(props) {
               </li>
               <li>
                 <Link
-                  className={
-                    active === "/add-your-property" ? "link active" : "link"
-                  }
-                  to={"/add-your-property"}
+                  className={active === "" ? "link active" : "link"}
+                  to={""}
                 >
-                  Add Properties
+                  Services
                 </Link>
               </li>
               <li>
                 <Link
-                  className={active === "" ? "link active" : "link"}
-                  to={""}
+                  className={active === "/locations" ? "link active" : "link"}
+                  to={"/locations"}
                 >
-                  Properties
+                  Locations
                 </Link>
               </li>
               <li>
@@ -72,7 +70,19 @@ function Navbar(props) {
                   className={active === "/contact" ? "link active" : "link"}
                   to={"/contact"}
                 >
-                  Contact
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={
+                    active === "/add-your-property"
+                      ? "link active property"
+                      : "link"
+                  }
+                  to={"/add-your-property"}
+                >
+                  Add Properties
                 </Link>
               </li>
             </ul>

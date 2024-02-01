@@ -12,12 +12,26 @@ function Owner(props) {
     <div>
       <Navbar />
 
-      <div className="main-banner-wrapper">
+      {/* <div className="main-banner-wrapper">
         <div className="main-banner">
           <div className="content">
             <h2>Navigating Your Real Estate Journey</h2>
             <h3>Unlocking the Door to Your Investment Success</h3>
             <Link>ADD your Property</Link>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="main-banner-wrappe">
+        <div className="main-banner">
+          <div className="main-image">
+            <img src={require("../../Assests/banner.webp")} alt="" />
+          </div>
+          <div className="main-content">
+            <h2>Navigating Your Real Estate Journey</h2>
+            <h3>Unlocking the Door to Your Investment Success</h3>
+            <Link to={"/add-your-property"}>ADD your Property</Link>
+            <Link to={"/search-property"}>Search for Property</Link>
           </div>
         </div>
       </div>

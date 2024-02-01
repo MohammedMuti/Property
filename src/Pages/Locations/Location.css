@@ -1,0 +1,58 @@
+p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.locations {
+  padding: 5% 10%;
+}
+
+.locations .content .heading {
+  margin-bottom: 1rem;
+}
+
+.locations .content .heading h2 {
+  font-size: 2rem;
+}
+
+.locations .content .loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.locations .content .loc .loc-box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.locations .content .loc .loc-box:hover {
+  color: #3492ff;
+}
+
+.locations .content .loc .loc-box svg {
+  font-size: 1.5rem;
+}
+
+.locations .content .loc .loc-box a span {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=Location.css.map */

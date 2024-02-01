@@ -1,0 +1,90 @@
+@import "../../Common/Variable/Variable.scss";
+
+.singleLocationWrapper {
+  padding: 5% 10%;
+  .singleLocation {
+    .heading {
+      text-align: center;
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .properties-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .property-box {
+        border: solid 3px #eee;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .property-img {
+          //   width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          img {
+            width: 20rem;
+          }
+
+          a {
+            width: 100%;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border: solid 3px $main;
+
+            &:hover {
+              color: white;
+              background-color: $main;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .property-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1.2rem;
+          gap: 0.5rem;
+
+          .icons {
+            display: flex;
+            gap: 1rem;
+            border: solid 3px #eee;
+            padding: 0rem 2rem;
+            .icon {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              svg {
+                font-size: 2rem;
+              }
+
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .amount {
+            color: green;
+            font-size: 1rem;
+            .value {
+              font-size: 1.8rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

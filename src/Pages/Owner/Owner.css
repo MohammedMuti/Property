@@ -8,29 +8,31 @@ img {
   width: 100%;
 }
 
-.main-banner-wrapper {
+.main-banner-wrappe {
+  padding: 5% 10%;
   width: 100%;
-  height: 40rem;
-  background-image: url(../../Assests/Banners/main-banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
-.main-banner-wrapper .main-banner {
-  height: 100%;
+.main-banner-wrappe .main-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10%;
+  gap: 3rem;
 }
 
-.main-banner-wrapper .main-banner .content {
+.main-banner-wrappe .main-banner .main-image {
+  width: 50%;
+}
+
+.main-banner-wrappe .main-banner .main-image img {
+  width: 100%;
+}
+
+.main-banner-wrappe .main-banner .main-content {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,23 +41,20 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
-  padding-top: 3rem;
-  color: white;
 }
 
-.main-banner-wrapper .main-banner .content h2 {
-  font-size: 2.5rem;
+.main-banner-wrappe .main-banner .main-content h2 {
+  font-size: 2.2rem;
 }
 
-.main-banner-wrapper .main-banner .content h3 {
-  font-size: 1.5rem;
+.main-banner-wrappe .main-banner .main-content h3 {
+  font-size: 1.2rem;
 }
 
-.main-banner-wrapper .main-banner .content a {
-  background-color: #3492ff;
+.main-banner-wrappe .main-banner .main-content a {
+  color: #3492ff;
   font-size: 1.2rem;
   font-weight: 500;
-  padding: 1rem 1.5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-transition: all 0.5s ease;
@@ -63,9 +62,10 @@ img {
   border-radius: 5px;
 }
 
-.main-banner-wrapper .main-banner .content a:hover {
-  background-color: white;
-  color: #3492ff;
+.main-banner-wrappe .main-banner .main-content a:hover {
+  background-color: #3492ff;
+  color: white;
+  padding: 0.5rem 1rem;
 }
 
 .aboutH {

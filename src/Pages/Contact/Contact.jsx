@@ -9,7 +9,7 @@ function Contact(props) {
     <div>
       <Navbar />
 
-      <Banner title={"Contact"} />
+      <Banner title={"Contact Us"} />
 
       <ContactComp />
 

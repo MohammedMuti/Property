@@ -1,8 +1,10 @@
 @import "../Variable/Variable.scss";
 
 .navbar-wrapper {
-  background-color: transparent;
-  position: fixed;
+  // background-color: rgba(0, 0, 0, 0.482);
+  background-color: #1e1c1e;
+  // position: fixed;
+  top: 0;
   width: 100%;
   padding: 1rem 0;
   transition: all 0.5s ease;
@@ -11,6 +13,9 @@
   &.scroll {
     background-color: rgba(0, 0, 0, 0.482);
     padding: 0;
+    // padding-top: 60px;
+    // position: fixed;
+    // margin-bottom: 60px;
   }
   .navbar {
     display: flex;
@@ -30,7 +35,7 @@
 
         li {
           .link {
-            color: black;
+            color: white;
             font-size: 1.2rem;
 
             &:hover {
