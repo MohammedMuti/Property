@@ -20,7 +20,11 @@ function SingleLocation(props) {
           <div className="properties-container">
             <div className="property-box">
               <div className="property-img">
-                <img src={require("../../Assests/banner.webp")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("../../Assests/banner.webp")}
+                  alt=""
+                />
                 <Link>View</Link>
               </div>
               <div className="property-info">

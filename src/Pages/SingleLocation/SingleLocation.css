@@ -45,6 +45,15 @@ img {
       justify-content: space-around;
 }
 
+@media (max-width: 1000px) {
+  .singleLocationWrapper .singleLocation .properties-container .property-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .singleLocationWrapper .singleLocation .properties-container .property-box .property-img {
   display: -webkit-box;
   display: -ms-flexbox;
