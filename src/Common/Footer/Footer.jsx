@@ -54,6 +54,8 @@ function Footer(props) {
             </div>
           </div>
         </div>
+        <br />
+        <hr />
         <div className="bottom">
           <div className="icons">
             <FontAwesomeIcon icon={faFacebook} />
