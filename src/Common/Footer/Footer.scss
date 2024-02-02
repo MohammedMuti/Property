@@ -39,6 +39,9 @@
       ul {
         list-style: none;
         padding-left: 2rem;
+        li {
+          margin-bottom: 0.5rem;
+        }
         @media (max-width: 500px) {
           padding: 0;
         }

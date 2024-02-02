@@ -7,13 +7,15 @@ import Contact from "./Pages/Contact/Contact";
 import Location from "./Pages/Locations/Location";
 import Tenant from "./Pages/Tenant/Tenant";
 import SingleLocation from "./Pages/SingleLocation/SingleLocation";
+import SingleProperty from "./Pages/SinglePropety/SingleProperty";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/properties/whitefield" element={<SingleLocation />} />
+        <Route path="/properties/01" element={<SingleProperty />} />
+        <Route path="/locations/whitefield" element={<SingleLocation />} />
         <Route path="/search-property" element={<Tenant />} />
         <Route path="/add-your-property" element={<AddProperty />} />
         <Route path="/contact" element={<Contact />} />

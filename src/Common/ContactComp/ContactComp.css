@@ -100,7 +100,9 @@ img {
 
 @media (max-width: 700px) {
   .contact-comp-wrapper .contact-comp .form {
-    padding: 2rem;
+    padding: 0rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -145,6 +147,13 @@ img {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+@media (max-width: 500px) {
+  .contact-comp-wrapper .contact-comp .form form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
 }
 
 .contact-comp-wrapper .contact-comp .form form button:hover {

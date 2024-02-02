@@ -49,6 +49,10 @@
   padding-left: 2rem;
 }
 
+.footer .top .top-container ul li {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 500px) {
   .footer .top .top-container ul {
     padding: 0;

@@ -25,7 +25,7 @@ function SingleLocation(props) {
                   src={require("../../Assests/banner.webp")}
                   alt=""
                 />
-                <Link>View</Link>
+                <Link to={"/properties/01"}>View</Link>
               </div>
               <div className="property-info">
                 <span className="address">
