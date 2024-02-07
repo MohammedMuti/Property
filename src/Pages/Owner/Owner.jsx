@@ -6,6 +6,7 @@ import Navbar from "../../Common/Navbar/Navbar";
 import AboutH from "./AboutH";
 import MaintainanceH from "./MaintainanceH";
 import "./Owner.css";
+import Propertyslide from "./Propertyslide";
 
 function Owner(props) {
   return (
@@ -25,7 +26,7 @@ function Owner(props) {
       <div className="main-banner-wrappe">
         <div className="main-banner">
           <div className="main-image">
-            <img src={require("../../Assests/banner.webp")} alt="" />
+            <img src={require("../../Assests/Banners/for Rent.png")} alt="" />
           </div>
           <div className="main-content">
             <h2>Global Iconic Ventures</h2>
@@ -93,6 +94,8 @@ function Owner(props) {
       </div> */}
 
       <MaintainanceH />
+
+      <Propertyslide />
 
       <ContactComp />
 

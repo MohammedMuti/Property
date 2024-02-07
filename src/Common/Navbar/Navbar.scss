@@ -1,8 +1,8 @@
 @import "../Variable/Variable.scss";
 
 .navbar-wrapper {
-  // background-color: rgba(0, 0, 0, 0.482);
-  background-color: #1e1c1e;
+  background-color: white;
+  // background-color: #1e1c1e;
   // position: fixed;
   top: 0;
   width: 100%;
@@ -45,7 +45,7 @@
 
         li {
           .link {
-            color: white;
+            color: black;
             font-size: 1.2rem;
             position: relative;
 
@@ -99,7 +99,7 @@
         &.home {
           li {
             .link {
-              color: white;
+              color: black;
               &:hover {
                 color: $main;
               }

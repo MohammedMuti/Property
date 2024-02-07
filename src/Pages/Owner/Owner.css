@@ -26,8 +26,9 @@ img {
 }
 
 .main-banner-wrappe {
-  padding: 5% 10%;
+  padding: 2% 5%;
   width: 100%;
+  background-color: black;
 }
 
 @media (max-width: 500px) {
@@ -79,6 +80,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+  color: white;
 }
 
 @media (max-width: 1000px) {
@@ -368,6 +370,9 @@ img {
   gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-image: url(../../Assests/Banners/main.png);
+  background-size: cover;
+  background-position: center;
   padding: 5% 10%;
 }
 
@@ -421,5 +426,34 @@ img {
 
 .maintainH .info p {
   text-align: justify;
+}
+
+.maintainH .info ul {
+  list-style: none;
+}
+
+.maintainH .info ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.maintainH .info ul li span {
+  font-weight: 600;
+}
+
+.property-slide {
+  padding: 5% 10%;
+}
+
+@media (max-width: 500px) {
+  .property-slide {
+    padding: 5% 5%;
+  }
+}
+
+.property-slide .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=Owner.css.map */
