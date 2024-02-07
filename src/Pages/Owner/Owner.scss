@@ -225,7 +225,10 @@
 
 .hwhy {
   // background-color: rgb(213, 213, 255);
-  background-color: rgb(213, 213, 255);
+  // background-color: rgb(213, 213, 255);
+  background-image: url(../../Assests/Banners/shape-banner.png);
+  background-position: center;
+  background-size: cover;
   padding: 5% 10%;
 
   @media (max-width: 500px) {
