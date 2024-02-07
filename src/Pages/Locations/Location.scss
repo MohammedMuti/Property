@@ -1,7 +1,10 @@
 @import "../../Common/Variable/Variable.scss";
 
 .locations {
-  padding: 5% 5%;
+  padding: 5% 10%;
+  @media (max-width: 500px) {
+    padding: 5% 5%;
+  }
 
   .search {
     display: flex;

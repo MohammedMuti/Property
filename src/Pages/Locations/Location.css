@@ -26,7 +26,13 @@ img {
 }
 
 .locations {
-  padding: 5% 5%;
+  padding: 5% 10%;
+}
+
+@media (max-width: 500px) {
+  .locations {
+    padding: 5% 5%;
+  }
 }
 
 .locations .search {
