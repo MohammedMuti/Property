@@ -456,4 +456,53 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+
+.counter {
+  padding: 5% 10%;
+  background-color: #222;
+}
+
+@media (max-width: 500px) {
+  .counter {
+    padding: 5% 5%;
+  }
+}
+
+.counter .box-contain {
+  grid-gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.counter .box-contain .box {
+  text-align: center;
+}
+
+.counter .box-contain .box span {
+  font-size: 4rem;
+}
+
+.counter .box-contain .box h4 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.counter .box-contain .box .span.one {
+  color: #f76766;
+}
+
+.counter .box-contain .box .span.two {
+  color: #265fdb;
+}
+
+.counter .box-contain .box .span.three {
+  color: #57c0ce;
+}
+
+.counter .box-contain .box .span.four {
+  color: #a666f7;
+}
 /*# sourceMappingURL=Owner.css.map */

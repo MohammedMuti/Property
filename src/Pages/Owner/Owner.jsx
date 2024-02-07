@@ -4,6 +4,7 @@ import ContactComp from "../../Common/ContactComp/ContactComp";
 import Footer from "../../Common/Footer/Footer";
 import Navbar from "../../Common/Navbar/Navbar";
 import AboutH from "./AboutH";
+import CounterHome from "./CounterHome";
 import MaintainanceH from "./MaintainanceH";
 import "./Owner.css";
 import Propertyslide from "./Propertyslide";
@@ -40,6 +41,8 @@ function Owner(props) {
       </div>
 
       <AboutH />
+
+      <CounterHome />
 
       <div className="hwhy">
         <div className="heading">

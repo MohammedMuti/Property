@@ -343,3 +343,44 @@
     display: flex;
   }
 }
+
+.counter {
+  padding: 5% 10%;
+  @media (max-width: 500px) {
+    padding: 5% 5%;
+  }
+  background-color: #222;
+
+  .box-contain {
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+    .box {
+      text-align: center;
+      span {
+        font-size: 4rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .span {
+        &.one {
+          color: #f76766;
+        }
+        &.two {
+          color: #265fdb;
+        }
+        &.three {
+          color: #57c0ce;
+        }
+        &.four {
+          color: #a666f7;
+        }
+      }
+    }
+  }
+}

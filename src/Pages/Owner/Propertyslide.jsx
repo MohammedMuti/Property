@@ -200,6 +200,9 @@ function Propertyslide(props) {
         </Swiper>
       </div> */}
       <div className="property-slide">
+        <div className="heading">
+          <h2>Our Managing Properties</h2>
+        </div>
         <Swiper
           loop={true}
           spaceBetween={50}
@@ -210,6 +213,28 @@ function Propertyslide(props) {
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
+          breakpoints={{
+            991: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
+          //   breakpoints={{
+          //     640: {
+          //       slidesPerView: 1,
+          //     },
+          //     768: {
+          //       slidesPerView: 2,
+          //     },
+          //     991: {
+          //       slidesPerView: 3,
+          //     },
+          //   }}
         >
           <SwiperSlide>
             <div className="swiper-slide slide" style={{ padding: 20 }}>
