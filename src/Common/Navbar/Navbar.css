@@ -61,6 +61,7 @@ img {
 
 .navbar-wrapper .navbar .logo {
   width: 8rem;
+  height: 5rem;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
