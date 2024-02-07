@@ -286,25 +286,21 @@
   background-size: cover;
   background-position: center;
   padding: 5% 10%;
+  @media (max-width: 800px) {
+    background-position: left;
+  }
   @media (max-width: 500px) {
     padding: 5% 5%;
   }
 
-  @media (max-width: 1000px) {
-    flex-direction: column;
+  @media (max-width: 800px) {
+    // flex-direction: column;
     width: 100%;
-  }
-
-  .img {
-    width: 48%;
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
   }
 
   .info {
     width: 48%;
-    @media (max-width: 1000px) {
+    @media (max-width: 800px) {
       width: 100%;
     }
     display: flex;

@@ -376,28 +376,20 @@ img {
   padding: 5% 10%;
 }
 
+@media (max-width: 800px) {
+  .maintainH {
+    background-position: left;
+  }
+}
+
 @media (max-width: 500px) {
   .maintainH {
     padding: 5% 5%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .maintainH {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-}
-
-.maintainH .img {
-  width: 48%;
-}
-
-@media (max-width: 1000px) {
-  .maintainH .img {
     width: 100%;
   }
 }
@@ -414,7 +406,7 @@ img {
   gap: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .maintainH .info {
     width: 100%;
   }

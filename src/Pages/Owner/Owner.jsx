@@ -96,9 +96,9 @@ function Owner(props) {
         </div>
       </div> */}
 
-      <MaintainanceH />
-
       <Propertyslide />
+
+      <MaintainanceH />
 
       <ContactComp />
 
