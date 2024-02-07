@@ -131,7 +131,8 @@ img {
 .main-banner-wrappe .main-banner .main-content a:hover {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
-  background-color: black;
+  background-color: white;
+  color: #3492ff;
 }
 
 .aboutH {

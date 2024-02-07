@@ -27,7 +27,7 @@ function Owner(props) {
       <div className="main-banner-wrappe">
         <div className="main-banner">
           <div className="main-image">
-            <img src={require("../../Assests/Banners/for Rent.png")} alt="" />
+            <img src={require("../../Assests/Banners/for Rent.webp")} alt="" />
           </div>
           <div className="main-content">
             <h2>Global Iconic Ventures</h2>
