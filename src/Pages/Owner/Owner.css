@@ -1,13 +1,23 @@
 p {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 @media (max-width: 500px) {
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -99,20 +109,27 @@ img {
 }
 
 .main-banner-wrappe .main-banner .main-content a {
-  color: #3492ff;
-  font-size: 1.2rem;
+  background-color: #3492ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 500;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .main-banner-wrappe .main-banner .main-content a {
+    font-size: 0.9rem;
+  }
 }
 
 .main-banner-wrappe .main-banner .main-content a:hover {
-  background-color: #3492ff;
-  color: white;
-  padding: 0.5rem 1rem;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  background-color: black;
 }
 
 .aboutH {
@@ -171,16 +188,6 @@ img {
   }
 }
 
-.aboutH .info h2 {
-  font-size: 2.2rem;
-}
-
-@media (max-width: 500px) {
-  .aboutH .info h2 {
-    font-size: 1.6rem;
-  }
-}
-
 .aboutH .info h2 span {
   color: #3492ff;
 }
@@ -191,22 +198,26 @@ img {
 
 .aboutH .info a {
   background-color: #3492ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 1rem;
-  color: white;
-  border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 500px) {
   .aboutH .info a {
-    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
 .aboutH .info a:hover {
-  background-color: white;
-  color: #3492ff;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  background-color: black;
 }
 
 .aboutH .content {
@@ -266,13 +277,83 @@ img {
 
 @media (max-width: 500px) {
   .aboutH .content .content-container .content-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 .aboutH .content .content-container .content-info p {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .aboutH .content .content-container .content-info p {
+    font-size: 0.8rem;
+  }
+}
+
+.hwhy {
+  background-color: #d5d5ff;
+  padding: 5% 10%;
+}
+
+@media (max-width: 500px) {
+  .hwhy {
+    padding: 5% 5%;
+  }
+}
+
+.hwhy .content {
+  margin-top: 2rem;
+  grid-gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.hwhy .content .box {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hwhy .content .box p {
+  line-height: 1.4rem;
+}
+
+.hwhy .content .box:hover {
+  -webkit-box-shadow: 0px 0px 20px -10px;
+          box-shadow: 0px 0px 20px -10px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.hwhy .content .box h3 {
+  color: #3492ff;
+}
+
+.hwhy .content .box img {
+  width: 6.5rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px -10px #3492ff;
+          box-shadow: 0px 0px 20px -10px #3492ff;
+  padding: 1rem;
 }
 
 .maintainH {
@@ -288,8 +369,30 @@ img {
   padding: 5% 10%;
 }
 
+@media (max-width: 500px) {
+  .maintainH {
+    padding: 5% 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .maintainH {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .maintainH .img {
   width: 48%;
+}
+
+@media (max-width: 1000px) {
+  .maintainH .img {
+    width: 100%;
+  }
 }
 
 .maintainH .info {
@@ -304,12 +407,17 @@ img {
   gap: 1rem;
 }
 
-.maintainH .info h2 {
-  font-size: 2.2rem;
-  line-height: 2.5rem;
+@media (max-width: 1000px) {
+  .maintainH .info {
+    width: 100%;
+  }
 }
 
 .maintainH .info h2 span {
   color: #3492ff;
+}
+
+.maintainH .info p {
+  text-align: justify;
 }
 /*# sourceMappingURL=Owner.css.map */

@@ -33,12 +33,64 @@ function Owner(props) {
               Your Trusted Partner In Property And Rental Management Excellence
             </h3>
             <Link to={"/add-your-property"}>ADD your Property</Link>
-            <Link to={"/search-property"}>Search for Property</Link>
+            <Link to={"/locations"}>Search for Property</Link>
           </div>
         </div>
       </div>
 
       <AboutH />
+
+      <div className="hwhy">
+        <div className="heading">
+          <h2>Why Choose Us?</h2>
+          <p>
+            At GIV, we turn rentals into remarkable experiences. Your
+            satisfaction is our priority. Welcome to a new era in rental
+            management!
+          </p>
+        </div>
+        <div className="content">
+          <div className="box">
+            <img src={require("../../Assests/Icons/light.png")} alt="" />
+            <h3>What Sets Us Apart?</h3>
+            <p>
+              Our commitment to Excellent, Personalized Service and a Team
+              dedicated to making our rental experience EXTRAORDINARY.
+            </p>
+          </div>
+          <div className="box">
+            <img src={require("../../Assests/Icons/trust.png")} alt="" />
+            <h3>Expertise You Can Trust?</h3>
+            <p>
+              With years of experience in the industry, our experts bring
+              unparalleled knowledge to every aspect of rental & property
+              management.
+            </p>
+          </div>
+          <div className="box">
+            <img src={require("../../Assests/Icons/service.png")} alt="" />
+            <h3>Personalized Service</h3>
+            <p>
+              Your needs are unique, and so is our approach. Enjoy personalized
+              service designed to exceed your expectations.
+            </p>
+          </div>
+          <div className="box">
+            <img src={require("../../Assests/Icons/technology.png")} alt="" />
+            <h3>Cutting Edge Technology</h3>
+            <p>
+              Stay connected with our user-friendly online portal. Accessible
+              anytime, anywhere, it puts you in control of your rental journey.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="hbenefits">
+        <div className="heading">
+          <h2>Benefits for Property Owners</h2>
+        </div>
+      </div> */}
 
       <MaintainanceH />
 

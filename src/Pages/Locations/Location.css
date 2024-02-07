@@ -1,13 +1,23 @@
 p {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 @media (max-width: 500px) {
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -68,6 +78,12 @@ img {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .locations .search .input input {
+    font-size: 1rem;
+  }
+}
+
 .locations .search .input ul {
   list-style: none;
   width: 100%;
@@ -85,12 +101,24 @@ img {
   padding: 0.2rem;
 }
 
+@media (max-width: 500px) {
+  .locations .search .input ul li {
+    font-size: 1rem;
+  }
+}
+
 .locations .content .heading {
   margin-bottom: 1rem;
 }
 
 .locations .content .heading h2 {
   font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .locations .content .heading h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .locations .content .loc {
@@ -125,7 +153,19 @@ img {
   font-size: 1.5rem;
 }
 
+@media (max-width: 500px) {
+  .locations .content .loc .loc-box svg {
+    font-size: 1rem;
+  }
+}
+
 .locations .content .loc .loc-box a span {
   font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .locations .content .loc .loc-box a span {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=Location.css.map */

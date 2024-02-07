@@ -17,10 +17,10 @@ function Footer(props) {
           <div className="top-container">
             <h3>About Us</h3>
             <p>
-              At [Company Name], we understand the unique challenges of managing
-              real estate from a distance. As property owners who may reside
-              outside the city, entrusting your valuable assets to a reliable
-              property management company is crucial.
+              At Global Iconic Ventures, we understand the unique challenges of
+              managing real estate from a distance. As property owners who may
+              reside outside the city, entrusting your valuable assets to a
+              reliable property management company is crucial.
             </p>
           </div>
           <div className="top-container">
@@ -50,7 +50,7 @@ function Footer(props) {
             <h3>Reach Us Now</h3>
             <div className="links">
               <Link>info@abc.com</Link>
-              <Link>+91 9123456789</Link>
+              <a href="tel:9004843980">+91 9004843980</a>
             </div>
           </div>
         </div>

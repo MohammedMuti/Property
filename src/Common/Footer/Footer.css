@@ -39,9 +39,16 @@
 
 .footer .top .top-container p,
 .footer .top .top-container a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #e0e0e0 !important;
+}
+
+@media (max-width: 500px) {
+  .footer .top .top-container p,
+  .footer .top .top-container a {
+    font-size: 0.8rem;
+  }
 }
 
 .footer .top .top-container ul {
