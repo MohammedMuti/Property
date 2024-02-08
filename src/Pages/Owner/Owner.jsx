@@ -43,7 +43,7 @@ function Owner(props) {
                 For Owners <br /> <span> Zero</span> Onbording
               </h3>
               <h3>
-                For Tenants <br /> <span> </span>No Broker
+                For Tenants <br /> <span> No </span>Broker
               </h3>
             </div>
           </div>

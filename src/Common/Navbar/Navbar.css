@@ -69,6 +69,7 @@ img {
 @media (max-width: 1000px) {
   .navbar-wrapper .navbar .logo {
     width: 4rem;
+    height: 3rem;
   }
 }
 
@@ -162,7 +163,7 @@ img {
 }
 
 .navbar-wrapper .navbar .lists svg {
-  color: white;
+  color: black;
   font-size: 2rem;
   display: none;
 }

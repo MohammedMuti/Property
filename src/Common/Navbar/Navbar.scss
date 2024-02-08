@@ -32,6 +32,7 @@
       transition: all ease 0.5s;
       @media (max-width: 1000px) {
         width: 4rem;
+        height: 3rem;
       }
     }
 
@@ -114,7 +115,7 @@
       }
 
       svg {
-        color: white;
+        color: black;
         font-size: 2rem;
         display: none;
 
