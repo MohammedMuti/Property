@@ -41,9 +41,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 3rem;
 }
 
@@ -99,9 +96,25 @@ img {
   }
 }
 
+.main-banner-wrappe .main-banner .main-content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main-banner-wrappe .main-banner .main-content h3 {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+.main-banner-wrappe .main-banner .main-content h3 span {
+  font-size: 2.5rem;
 }
 
 @media (max-width: 500px) {

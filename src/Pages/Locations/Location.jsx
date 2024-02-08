@@ -80,25 +80,31 @@ function Location(props) {
             <div className="loc-box">
               <FontAwesomeIcon icon={faLocationDot} />
               <Link to={"/locations/whitefield"}>
-                <span>Bangalore</span>
+                <span>North</span>
               </Link>
             </div>
             <div className="loc-box">
               <FontAwesomeIcon icon={faLocationDot} />
               <Link>
-                <span>Bangalore</span>
+                <span>South</span>
               </Link>
             </div>
             <div className="loc-box">
               <FontAwesomeIcon icon={faLocationDot} />
               <Link>
-                <span>Bangalore</span>
+                <span>East</span>
               </Link>
             </div>
             <div className="loc-box">
               <FontAwesomeIcon icon={faLocationDot} />
               <Link>
-                <span>Bangalore</span>
+                <span>West</span>
+              </Link>
+            </div>
+            <div className="loc-box">
+              <FontAwesomeIcon icon={faLocationDot} />
+              <Link>
+                <span>Central</span>
               </Link>
             </div>
           </div>

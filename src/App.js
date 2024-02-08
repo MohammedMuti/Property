@@ -8,12 +8,20 @@ import Location from "./Pages/Locations/Location";
 import Tenant from "./Pages/Tenant/Tenant";
 import SingleLocation from "./Pages/SingleLocation/SingleLocation";
 import SingleProperty from "./Pages/SinglePropety/SingleProperty";
+import Employee from "./Pages/Employee/Employee";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
+        <Route path="/employee/dashboard/query" element={<Employee />} />
+        <Route path="/employee/dashboard/north" element={<Employee />} />
+        <Route path="/employee/dashboard/south" element={<Employee />} />
+        <Route path="/employee/dashboard/east" element={<Employee />} />
+        <Route path="/employee/dashboard/west" element={<Employee />} />
+        <Route path="/employee/dashboard/central" element={<Employee />} />
+        <Route path="/employee/dashboard/" element={<Employee />} />
         <Route path="/properties/01" element={<SingleProperty />} />
         <Route path="/locations/whitefield" element={<SingleLocation />} />
         <Route path="/search-property" element={<Tenant />} />

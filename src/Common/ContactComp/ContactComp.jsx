@@ -1,7 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactComp.css";
+import axios from "axios";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 function ContactComp(props) {
+  const [loading, setLoading] = useState(false);
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    console.log("You're good!");
+
+    try {
+      await axios("http://localhost:8000/createUser", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        data: mailerState,
+      })
+        .then((res) => {
+          console.log(res);
+          if (res.status === 200) {
+            console.log(res.data);
+            setLoading(false);
+          } else if (res.status === 402) {
+            console.log("Message failed to send");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  function handleStateChange(e) {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
   return (
     <>
       <div className="contact-comp-wrapper">
@@ -22,17 +70,41 @@ function ContactComp(props) {
             </div>
             <div className="form">
               <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="number" placeholder="Number" />
+                <input
+                  onChange={handleStateChange}
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  onChange={handleStateChange}
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <input
+                  onChange={handleStateChange}
+                  type="number"
+                  name="phone"
+                  placeholder="Number"
+                />
                 <textarea
                   placeholder="Message"
-                  name=""
+                  name="message"
                   id=""
                   cols="30"
                   rows="10"
+                  onChange={handleStateChange}
                 ></textarea>
-                <button type="submit">Submit</button>
+                {loading ? (
+                  <Box sx={{ display: "flex" }}>
+                    <CircularProgress />
+                  </Box>
+                ) : (
+                  <button onClick={submitEmail} type="submit">
+                    Submit
+                  </button>
+                )}
               </form>
             </div>
           </div>
