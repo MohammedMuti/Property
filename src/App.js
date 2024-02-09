@@ -22,7 +22,7 @@ function App() {
         <Route path="/employee/dashboard/west" element={<Employee />} />
         <Route path="/employee/dashboard/central" element={<Employee />} />
         <Route path="/employee/dashboard/" element={<Employee />} />
-        <Route path="/properties/01" element={<SingleProperty />} />
+        <Route path="/properties/:id" element={<SingleProperty />} />
         <Route path="/locations/whitefield" element={<SingleLocation />} />
         <Route path="/search-property" element={<Tenant />} />
         <Route path="/add-your-property" element={<AddProperty />} />

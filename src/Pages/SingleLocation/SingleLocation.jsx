@@ -31,7 +31,7 @@ function SingleLocation(props) {
                 <span className="address">
                   3 BHK Fully Furnished, Villa, Kadugodi,
                 </span>
-                <span>Bangalore</span>
+                <span className="address">Bangalore</span>
                 <div className="icons">
                   <div className="icon">
                     <p>Bedrooms</p>

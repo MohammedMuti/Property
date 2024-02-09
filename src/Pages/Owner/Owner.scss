@@ -82,7 +82,8 @@
       gap: 1rem;
       color: white;
       h2 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
+        // font-family: "Courier New", Courier, monospace;
         @media (max-width: 500px) {
           font-size: 1.5rem;
         }
@@ -393,6 +394,48 @@
         &.four {
           color: #a666f7;
         }
+      }
+    }
+  }
+}
+
+.refer {
+  padding: 5% 10%;
+  @media (max-width: 500px) {
+    padding: 5% 5%;
+  }
+  background-color: $main;
+  color: white;
+  .heading {
+    h2 {
+      font-size: 2.5rem;
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      background-color: white;
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+      color: $main;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: black;
+        color: white;
+        transform: translateY(-7px);
+      }
+      @media (max-width: 500px) {
+        font-size: 1.2rem;
       }
     }
   }

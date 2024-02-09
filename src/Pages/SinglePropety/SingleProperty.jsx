@@ -8,152 +8,198 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import properties from "./Properties";
+import { useState } from "react";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: require("../../Assests/Properties/1/1.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/1.jpeg"),
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: require("../../Assests/Properties/1/2.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/2.jpeg"),
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: require("../../Assests/Properties/1/3.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/3.jpeg"),
+  },
+  {
+    original: require("../../Assests/Properties/1/4.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/4.jpeg"),
+  },
+  {
+    original: require("../../Assests/Properties/1/5.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/5.jpeg"),
+  },
+  {
+    original: require("../../Assests/Properties/1/6.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/6.jpeg"),
+  },
+  {
+    original: require("../../Assests/Properties/1/7.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/7.jpeg"),
+  },
+  {
+    original: require("../../Assests/Properties/1/8.jpeg"),
+    thumbnail: require("../../Assests/Properties/1/8.jpeg"),
   },
 ];
 
 function SingleProperty(props) {
+  const { id } = useParams();
+  const [property, setProperty] = useState(null);
+
+  useEffect(() => {
+    const foundProperty = properties.find(
+      (property) => property.id === parseInt(id)
+    );
+    setProperty(foundProperty);
+  }, [id]);
+
+  console.log(property);
+
   return (
     <div>
       <Navbar />
-      <div className="singlePropertyWrapper">
-        <div className="singleProperty">
-          <div className="heading">
-            <h2>3 BHK Fully Furnished Villa, Kadugodi, Bangalore</h2>
-          </div>
-
-          <div className="main-content">
-            <div className="img-container">
-              <ImageGallery items={images} />
-            </div>
-            <div className="about-property">
-              <h3>About the Property</h3>
-              <p>
-                This is a Fully Furnished, Villa type property located at
-                Kadugodi, Bangalore at an affordable monthly rent of ₹ 50000/
-              </p>
-              <span className="amount">
-                Price: <span className="sm">₹</span>50000/
-                <span className="sm">month</span>
-              </span>
-              <button className="visit">Want to Visit the Property?</button>
-              <div className="book-share">
-                <button className="book">Book Now</button>
-                <button className="share">
-                  Share <FontAwesomeIcon icon={faWhatsapp} />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="amenities">
+      {property ? (
+        <div className="singlePropertyWrapper">
+          <div className="singleProperty">
             <div className="heading">
-              <h2>Property Amenities</h2>
+              <h2>3 BHK Fully Furnished Villa, Kadugodi, Bangalore</h2>
             </div>
-            <div className="content">
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Balconies.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img src={require("../../Assests/Amenities/Area.png")} alt="" />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Parking.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Maintainance.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Deposit.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Bachelor.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img src={require("../../Assests/Amenities/Meat.png")} alt="" />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Students.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Floor.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img
-                  src={require("../../Assests/Amenities/Terrace.png")}
-                  alt=""
-                />
-                <p>No</p>
-              </div>
-              <div className="am-box">
-                <p>Balconies</p>
-                <img src={require("../../Assests/Amenities/Pets.png")} alt="" />
-                <p>No</p>
-              </div>
-            </div>
-          </div>
 
-          <div className="prop-vid">
-            <div className="heading">
-              <h2>Property Location and Video</h2>
+            <div className="main-content">
+              <div className="img-container">
+                <ImageGallery items={images} />
+              </div>
+              <div className="about-property">
+                <h3>About the Property</h3>
+                <p>
+                  This is a Fully Furnished, Villa type property located at
+                  Kadugodi, Bangalore at an affordable monthly rent of ₹ 50000/
+                </p>
+                <span className="amount">
+                  Price: <span className="sm">₹</span>50000/
+                  <span className="sm">month</span>
+                </span>
+                <button className="visit">Want to Visit the Property?</button>
+                <div className="book-share">
+                  <button className="book">Book Now</button>
+                  <button className="share">
+                    Share <FontAwesomeIcon icon={faWhatsapp} />
+                  </button>
+                </div>
+              </div>
             </div>
-            <div className="content">
-              <div className="video">
-                <iframe
-                  title="Youtube"
-                  srcdoc="
+
+            <div className="amenities">
+              <div className="heading">
+                <h2>Property Amenities</h2>
+              </div>
+              <div className="content">
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Balconies.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Area.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Parking.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Maintainance.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Deposit.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Bachelor.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Meat.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Students.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Floor.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Terrace.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+                <div className="am-box">
+                  <p>Balconies</p>
+                  <img
+                    src={require("../../Assests/Amenities/Pets.png")}
+                    alt=""
+                  />
+                  <p>No</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="prop-vid">
+              <div className="heading">
+                <h2>Property Location and Video</h2>
+              </div>
+              <div className="content">
+                <div className="video">
+                  <iframe
+                    title="Youtube"
+                    srcdoc="
           <style>
               body, .full {
                   width: 100%;
@@ -184,54 +230,57 @@ function SingleProperty(props) {
               </svg>
           </a>
       "
-                  frameborder="0"
-                ></iframe>
-              </div>
-              <div className="maps">
-                <iframe
-                  className="map"
-                  title="map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14676.076183382833!2d77.60700385227963!3d13.023555620349676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17fb66ca2d95%3A0xea8c3e0488bf6f40!2sASA%20Building%20Demolition%20Contractor%20Bangalore!5e0!3m2!1sen!2sin!4v1675286800879!5m2!1sen!2sin&zoom=9"
-                  allowFullScreen=""
-                  loading="lazy"
-                ></iframe>
+                    frameborder="0"
+                  ></iframe>
+                </div>
+                <div className="maps">
+                  <iframe
+                    className="map"
+                    title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14676.076183382833!2d77.60700385227963!3d13.023555620349676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17fb66ca2d95%3A0xea8c3e0488bf6f40!2sASA%20Building%20Demolition%20Contractor%20Bangalore!5e0!3m2!1sen!2sin!4v1675286800879!5m2!1sen!2sin&zoom=9"
+                    allowFullScreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="similar">
-            <div className="heading">
-              <h2>Similar Properties</h2>
-            </div>
-            <div className="container">
-              <div className="box">
-                <img src={require("../../Assests/banner.webp")} alt="" />
-                <span>
-                  Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
-                  (8438)
-                </span>
-                <Link>View</Link>
+            <div className="similar">
+              <div className="heading">
+                <h2>Similar Properties</h2>
               </div>
-              <div className="box">
-                <img src={require("../../Assests/banner.webp")} alt="" />
-                <span>
-                  Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
-                  (8438)
-                </span>
-                <Link>View</Link>
-              </div>
-              <div className="box">
-                <img src={require("../../Assests/banner.webp")} alt="" />
-                <span>
-                  Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
-                  (8438)
-                </span>
-                <Link>View</Link>
+              <div className="container">
+                <div className="box">
+                  <img src={require("../../Assests/banner.webp")} alt="" />
+                  <span>
+                    Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
+                    (8438)
+                  </span>
+                  <Link>View</Link>
+                </div>
+                <div className="box">
+                  <img src={require("../../Assests/banner.webp")} alt="" />
+                  <span>
+                    Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
+                    (8438)
+                  </span>
+                  <Link>View</Link>
+                </div>
+                <div className="box">
+                  <img src={require("../../Assests/banner.webp")} alt="" />
+                  <span>
+                    Sobha Habitech 3 BHK Semi Furnished Apartment, Whitefield,
+                    (8438)
+                  </span>
+                  <Link>View</Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div>Property not found</div>
+      )}
       <ContactComp />
       <Footer />
     </div>

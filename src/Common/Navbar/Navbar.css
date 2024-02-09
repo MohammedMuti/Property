@@ -74,6 +74,7 @@ img {
 }
 
 .navbar-wrapper .navbar .lists .list {
+  margin-right: 4rem;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,5 +244,53 @@ img {
 .nav-mob-res .mob-nav a.active {
   background-color: #3492ff;
   color: white;
+}
+
+.fixedZero {
+  position: fixed;
+  color: yellow;
+  z-index: 100;
+  bottom: 3%;
+  left: 3%;
+}
+
+.fixedZero h2 {
+  font-size: 5rem;
+}
+
+@media (max-width: 500px) {
+  .fixedZero h2 {
+    font-size: 2rem;
+  }
+}
+
+.fixedZero h2 span {
+  font-size: 2.3rem;
+}
+
+@media (max-width: 500px) {
+  .fixedZero h2 span {
+    font-size: 1.5rem;
+  }
+}
+
+.fixedsche {
+  position: fixed;
+  background-color: red;
+  color: white;
+  z-index: 100;
+  bottom: 50%;
+  right: 3%;
+  padding: 0.5rem 1rem;
+}
+
+.fixedsche h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .fixedsche h2 {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

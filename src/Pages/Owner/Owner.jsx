@@ -30,6 +30,7 @@ function Owner(props) {
             <img src={require("../../Assests/Banners/for Rent.webp")} alt="" />
           </div>
           <div className="main-content">
+            <h2>Hello Bangalore!</h2>
             <h2>Global Iconic Ventures Property</h2>
             <h3>
               Your Trusted Partner In Property And Rental Management Excellence
@@ -43,7 +44,7 @@ function Owner(props) {
                 For Owners <br /> <span> Zero</span> Onbording
               </h3>
               <h3>
-                For Tenants <br /> <span> No </span>Broker
+                For Tenants <br /> <span> No </span>Brokerage
               </h3>
             </div>
           </div>
@@ -108,9 +109,31 @@ function Owner(props) {
 
       <Propertyslide />
 
+      <div className="refer">
+        <div className="heading">
+          <h2>EARN WITH REFERAL</h2>
+          <h3>Owner {">"} Owner</h3>
+          <p>
+            Feel free to refer to get Free Management (Zero Management Fee for 2
+            months)
+          </p>
+          <Link>REFER NOW</Link>
+        </div>
+      </div>
+
       <MaintainanceH />
 
       <ContactComp />
+
+      <div className="fixedZero">
+        <h2>
+          0<span> Brokerage</span>
+        </h2>
+      </div>
+      {/* 
+      <div className="fixedsche">
+        <h2>Schedule Visit</h2>
+      </div> */}
 
       <Footer />
     </div>
