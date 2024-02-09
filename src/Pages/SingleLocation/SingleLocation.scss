@@ -30,6 +30,7 @@
 
         @media (max-width: 1000px) {
           flex-direction: column;
+          border: none;
         }
 
         .property-img {
@@ -84,6 +85,7 @@
             border: solid 3px #eee;
             padding: 0rem 2rem;
             @media (max-width: 500px) {
+              border: none;
               gap: 0.5rem;
             }
             .icon {

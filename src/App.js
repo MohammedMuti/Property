@@ -9,6 +9,7 @@ import Tenant from "./Pages/Tenant/Tenant";
 import SingleLocation from "./Pages/SingleLocation/SingleLocation";
 import SingleProperty from "./Pages/SinglePropety/SingleProperty";
 import Employee from "./Pages/Employee/Employee";
+import TenantForm from "./Pages/TenantForm/TenantForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/employee/dashboard/central" element={<Employee />} />
         <Route path="/employee/dashboard/" element={<Employee />} />
         <Route path="/properties/:id" element={<SingleProperty />} />
+        <Route path="/properties/:id/book-now" element={<TenantForm />} />
         <Route path="/locations/whitefield" element={<SingleLocation />} />
         <Route path="/search-property" element={<Tenant />} />
         <Route path="/add-your-property" element={<AddProperty />} />

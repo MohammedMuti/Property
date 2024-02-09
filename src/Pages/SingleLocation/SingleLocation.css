@@ -80,6 +80,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border: none;
   }
 }
 
@@ -147,6 +148,7 @@ img {
 
 @media (max-width: 500px) {
   .singleLocationWrapper .singleLocation .properties-container .property-box .property-info .icons {
+    border: none;
     gap: 0.5rem;
   }
 }

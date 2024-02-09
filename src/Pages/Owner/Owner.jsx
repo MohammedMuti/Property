@@ -5,6 +5,7 @@ import Footer from "../../Common/Footer/Footer";
 import Navbar from "../../Common/Navbar/Navbar";
 import AboutH from "./AboutH";
 import CounterHome from "./CounterHome";
+import CounterMore from "./CounterMore";
 import MaintainanceH from "./MaintainanceH";
 import "./Owner.css";
 import Propertyslide from "./Propertyslide";
@@ -108,6 +109,8 @@ function Owner(props) {
       </div> */}
 
       <Propertyslide />
+
+      <CounterMore />
 
       <div className="refer">
         <div className="heading">

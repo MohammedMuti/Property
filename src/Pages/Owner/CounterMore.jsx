@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
-function CounterHome(props) {
+function CounterMore(props) {
   const [startCounting, setStartCounting] = useState(false);
 
   useEffect(() => {
@@ -28,69 +28,69 @@ function CounterHome(props) {
         {/* <CountUp end={100} duration={5} /> */}
 
         {/* <div>
-          <div id="count-up-section" style={{ height: "10px" }}></div>
-          <div>
-            <CountUp
-              start={startCounting ? 0 : null}
-              end={100}
-              duration={5}
-              redraw={true}
-            >
-              {({ countUpRef }) => (
-                <div>
-                  <span ref={countUpRef} />
-                </div>
-              )}
-            </CountUp>
-          </div>
-        </div> */}
+            <div id="count-up-section" style={{ height: "10px" }}></div>
+            <div>
+              <CountUp
+                start={startCounting ? 0 : null}
+                end={100}
+                duration={5}
+                redraw={true}
+              >
+                {({ countUpRef }) => (
+                  <div>
+                    <span ref={countUpRef} />
+                  </div>
+                )}
+              </CountUp>
+            </div>
+          </div> */}
 
         <div id="count-up-section"></div>
-        <div className="box-contain">
+        <div className="box-contain-one">
           <div className="box">
             <CountUp
-              className="span one"
+              className="span three"
               start={startCounting ? 0 : null}
               end={87}
               duration={5}
               redraw={true}
             />
-            <h4>Satisfied Owners</h4>
-          </div>
-          <div className="box">
-            <CountUp
-              className="span two"
-              start={startCounting ? 0 : null}
-              end={202}
-              duration={5}
-              redraw={true}
-            />
-            <h4>Satisfied Tenants</h4>
-          </div>
-          {/* <div className="box">
-            <CountUp
-              className="span three"
-              start={startCounting ? 0 : null}
-              end={100}
-              duration={5}
-              redraw={true}
-            />
-            <h4>Satisfied Customers</h4>
+            <h4>Vacant Properties</h4>
           </div>
           <div className="box">
             <CountUp
               className="span four"
               start={startCounting ? 0 : null}
-              end={100}
+              end={202}
               duration={5}
               redraw={true}
             />
-            <h4>Satisfied Customers</h4>
-          </div> */}
+            <h4>Tenanted Properties</h4>
+          </div>
+          {/* <div className="box">
+              <CountUp
+                className="span three"
+                start={startCounting ? 0 : null}
+                end={100}
+                duration={5}
+                redraw={true}
+              />
+              <h4>Satisfied Customers</h4>
+            </div>
+            <div className="box">
+              <CountUp
+                className="span four"
+                start={startCounting ? 0 : null}
+                end={100}
+                duration={5}
+                redraw={true}
+              />
+              <h4>Satisfied Customers</h4>
+            </div> */}
         </div>
       </div>
     </div>
   );
 }
 
-export default CounterHome;
+export default CounterMore;

@@ -85,9 +85,13 @@ function SingleProperty(props) {
                   Price: <span className="sm">₹</span>50000/
                   <span className="sm">month</span>
                 </span>
-                <button className="visit">Want to Visit the Property?</button>
+                <Link to={`/properties/${id}/book-now`} className="visit">
+                  Want to Visit the Property?
+                </Link>
                 <div className="book-share">
-                  <button className="book">Book Now</button>
+                  <Link to={`/properties/${id}/book-now`} className="book">
+                    Book Free Visit
+                  </Link>
                   <button className="share">
                     Share <FontAwesomeIcon icon={faWhatsapp} />
                   </button>
