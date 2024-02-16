@@ -20,19 +20,32 @@
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0rem 3rem;
     @media (max-width: 1000px) {
-      padding: 0 0.5rem;
+      justify-content: space-between;
+
+      padding: 0rem 1rem;
     }
 
     .logo {
-      width: 8rem;
-      height: 5rem;
+      // width: 8rem;
+      // height: 5rem;
       transition: all ease 0.5s;
       @media (max-width: 1000px) {
-        width: 4rem;
-        height: 3rem;
+        // width: 4rem;
+        // height: 3rem;
+      }
+
+      a {
+        text-align: center;
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          color: black;
+          margin-top: -10px;
+        }
       }
     }
 

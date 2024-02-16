@@ -47,30 +47,36 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0rem 3rem;
 }
 
 @media (max-width: 1000px) {
   .navbar-wrapper .navbar {
-    padding: 0 0.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0rem 1rem;
   }
 }
 
 .navbar-wrapper .navbar .logo {
-  width: 8rem;
-  height: 5rem;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
-@media (max-width: 1000px) {
-  .navbar-wrapper .navbar .logo {
-    width: 4rem;
-    height: 3rem;
-  }
+.navbar-wrapper .navbar .logo a {
+  text-align: center;
+}
+
+.navbar-wrapper .navbar .logo a h3 {
+  font-size: 2rem;
+}
+
+.navbar-wrapper .navbar .logo a p {
+  color: black;
+  margin-top: -10px;
 }
 
 .navbar-wrapper .navbar .lists .list {

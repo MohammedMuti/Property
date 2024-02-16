@@ -2,7 +2,7 @@ import { faBars, faMultiply } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../Assests/logo.svg";
+// import logo from "../../Assests/logo.svg";
 import "./Navbar.css";
 
 function Navbar(props) {
@@ -33,7 +33,9 @@ function Navbar(props) {
         <div className="navbar">
           <div className="logo">
             <Link to={"/"}>
-              <img src={logo} alt="" />
+              {/* <img src={logo} alt="" /> */}
+              <h3>GIV</h3>
+              <p>Global Iconic Ventures</p>
             </Link>
           </div>
           <div className="lists">
@@ -88,7 +90,7 @@ function Navbar(props) {
                   Contact Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className={
                     active === "/add-your-property"
@@ -99,7 +101,7 @@ function Navbar(props) {
                 >
                   Add Properties
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <FontAwesomeIcon
               onClick={() => setSubActive(!subActive)}
@@ -141,14 +143,14 @@ function Navbar(props) {
           >
             <li>Contact Us</li>
           </Link>
-          <Link
+          {/* <Link
             className={
               active === "/add-your-property" ? "link active property" : "link"
             }
             to={"/add-your-property"}
           >
             <li>Add Properties</li>
-          </Link>
+          </Link> */}
         </ul>
       </div>
     </div>
